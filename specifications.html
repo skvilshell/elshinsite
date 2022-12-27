@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">	
+    <title>PC Характеристики</title> 
+  </head>
+  
+	<body>
+	
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture"> 
+		<h1>Елшин Александр</h1>
+		<h2>Прикладная информатика</h2>
+		
+	</div>
+	
+	
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Профиль</a></li>
+			<li><a href="specifications.html">PC Характеристики</a></li>
+			<li><a href="projects.html">Проекты</a></li>
+			<li><a href="interests.html">Интересы</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>	
+				
+		
+		</ul>
+	</div>
+	
+
+	
+	<div id="content"> 
+		<img class="icon" src="images/specs_ico.png" alt="Icon" > 
+		<h1 class="content_header">PC Характеристики</h1>	
+		<hr>  
+		
+		<div class="project_text">
+		<b>CPU</b>: Intel Core i5-7500 CPU @3.4GHz
+		<br>
+		<br>
+		<b>CPU Cooler</b>: Cooler Master Hyper 212 EVO
+		<br>
+		<br>
+		<b>Memory</b>: Corsair Vengeance 16GB DDR4 2400MHz
+		<br>
+		<br>
+		<b>Hard-Drive</b>: WD 2TB 3.5"
+		<br>
+		<br>
+		<b>Solid State Drive</b>: 256GB Samsung EVO
+		<br>
+		<br>
+		<b>Graphics Card</b>: Gigabyte GTX 1060 6GB [GAMING]
+		<br>
+		<br>
+		<b>Motherboard</b>: ASUS ROG Strix B250F
+		<br>
+		<br>
+		<b>Power Supply</b>: EVGA SuperNOVA 650 G2 80+ GOLD
+		<br>
+		<br>
+		<b>Case</b>: NZXT S340 Elite (Black/Blue)
+		
+		</div>
+		
+
+	</div>
+	
+	
+	<div id="content">
+		<img class="icon" src="images/pictures_ico.png" alt="Icon"> 
+		<h1 class="content_header">Фотографии</h1>
+
+		<hr>
+		<div class="project_text">
+		<h1 class="content_header"> PC </h1>
+		</div>
+		<a href=images/pc_1.jpg><img class="pc_picture" src="images/pc_1.jpg" alt="Picture of PC"></a>
+		<br>
+		<a href=images/pc_2.jpg><img class="pc_picture" src="images/pc_2.jpg" alt="Picture of PC"></a>
+	</div>
+	
+	
+	
+	<div class="footer">
+		&copy; Елшин Александр - Website
+		<div class="footer_icons">
+			<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook" id="social"> </a> 
+			<a href="https://twitter.com"><img src="images/twitter.png" alt="twitter" id="social"> </a> 
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a> 
+		</div>
+	</div> 
+	
+
+	<script>
+	function dropDownMenu() {
+		var x = document.getElementById("myNav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>	
+	</body>
+</html>

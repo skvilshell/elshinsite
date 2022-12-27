@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Проекты</title>
+</head>
+
+<body>
+
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture">
+		<h1>Елшин Александр</h1>
+		<h2>Прикладная информатика</h2>
+
+	</div>
+
+
+
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Профиль</a></li>
+			<li><a href="specifications.html">PC Характеристики</a></li>
+			<li><a href="projects.html">Проекты</a></li>
+			<li><a href="interests.html">Интересы</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>
+
+		</ul>
+	</div>
+
+
+
+	<div id="content">
+		<img class="icon" src="images/completed_ico.png" alt="Icon">
+		<h1 class="content_header">Выполненные Проекты</h1>
+		<hr>
+
+		<div class="project_text">
+			<h1 class="content_header"> Sample JS </h1>
+			В зависимости от выбранной категории и суммы, высчитывается скидка и предложение по покупке.
+		</div>
+		<a href=images/sample-js.png><img class="project_picture" src="images/sample-js.png" alt=""></a>
+
+		<div class="project_text">
+			<h1 class="content_header"> Игровое приложение </h1>
+			Определение одинаковых пар по заданному признаку.
+		</div>
+		<a href=images/c_program.jpg><img class="project_picture" src="images/c_program.jpg" alt="C++ program"></a>
+
+	</div>
+
+
+
+	<div class="footer">
+		&copy; Елшин Александр - Website
+		<div class="footer_icons">
+			<a href="https://www.facebook.com"><img src="images/fb.png" alt="facebook" id="social"> </a>
+			<a href="https://twitter.com"><img src="images/twitter.png" alt="twitter" id="social"> </a>
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a>
+		</div>
+	</div>
+
+
+	<script>
+		function dropDownMenu() {
+			var x = document.getElementById("myNav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	</script>
+</body>
+
+</html>

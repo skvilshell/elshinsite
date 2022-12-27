@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Домашняя страница</title>
+</head>
+
+<body>
+
+	<div class="header">
+		<img class="profile-circle" src="images/profile_pic.jpg" alt="Profile Picture">
+		<h1>Елшин Александр</h1>
+		<h2>Прикладная информатика</h2>
+	</div>
+
+
+
+	<div class="navbar" id="myNav">
+		<ul class="nav">
+			<li><a href="index.html">Профиль</a></li>
+			<li><a href="specifications.html">PC Характеристики</a></li>
+			<li><a href="projects.html">Проекты</a></li>
+			<li><a href="interests.html">Интересы</a></li>
+			<a href="javascript:void(0);" style="font-size:25px;" class="navicon" onclick="dropDownMenu()">&#9776;</a>
+
+
+		</ul>
+	</div>
+
+
+
+
+	<div id="content">
+		<img class="icon" src="images/profile_ico.png" alt="Icon">
+		<h1 class="content_header">Персональная информация</h1>
+		<hr>
+
+		<div id="parent">
+			<div id="bluebox_info">Имя:</div>
+			<div id="whitebox_info">Александр Елшин</div>
+		</div>
+
+
+		<div id="parent">
+			<div id="bluebox_info">Сайт:</div>
+			<div id="whitebox_info">www.***.com</div>
+		</div>
+
+		<div id="parent">
+			<div id="bluebox_info">Email:</div>
+			<div id="whitebox_info">***@***.com</div>
+		</div>
+
+
+		<div id="parent_right">
+			<div id="bluebox_info_right">Курс:</div>
+			<div id="whitebox_info_right">Прикладная информатика</div>
+		</div>
+
+
+		<div id="parent_right">
+			<div id="bluebox_info_right">Телефон:</div>
+			<div id="whitebox_info_right">7-999-999-99-99</div>
+		</div>
+
+		<div id="parent_right">
+			<div id="bluebox_info_right">Образование:</div>
+			<div id="whitebox_info_right">Среднее</div>
+		</div>
+
+	</div>
+
+
+	<div id="content">
+		<img class="icon" src="images/about_ico.png" alt="Icon">
+		<h1 class="content_header">Привет, меня зовут Александр</h1>
+		<h2 class="content_subheader">Студент </h2>
+		<hr>
+		<center><a href=images/profile_picture.jpg><img class="index_picture" src="images/profile_picture.jpg"
+					alt="Picture of CS"></a></center>
+		Я студент МБИ, изучаю компьютерные науки. В настоящее время я учусь на третьем курсе, стремясь расширить свои
+		знания в различных областях. Мои интересы в основном лежат в области кодирования
+		такие как веб-разработка. На этом сайте вы найдете дополнительную информацию обо мне и о некоторых проектах,
+		которые я уже выполнил
+	</div>
+
+
+
+
+	<div class="footer">
+		&copy; Елшин Александр - Website
+		<div class="footer_icons">
+			<a href="https://www.facebook.com/"><img src="images/fb.png" alt="facebook" id="social"> </a>
+			<a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter" id="social"> </a>
+			<a href="https://www.flickr.com/"> <img src="images/flickr.png" alt="flickr" id="social"> </a>
+		</div>
+	</div>
+
+
+	<script>
+		function dropDownMenu() {
+			var x = document.getElementById("myNav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	</script>
+</body>
+
+</html>
